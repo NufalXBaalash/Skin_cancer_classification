@@ -1,6 +1,7 @@
-tensorflow
-numpy
-PIL
-matplotlib
-pandas
+streamlit
 seaborn
+pandas
+tensorflow==2.15.0
+numpy
+pillow
+matplotlib
