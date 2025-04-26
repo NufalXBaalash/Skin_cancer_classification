@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import io
+import gdown
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
@@ -56,6 +57,10 @@ classes = ["Akiec", "BCC", "BKL", "DF", "MEL", "NV", "Vasc"]
 @st.cache_resource
 def load_keras_model():
     """Load the Keras model once and cache it."""
+    model_path = "model.h5"
+    if not os.path.exists(model_path):
+        url = "https://drive.google.com/file/d/1a34nRF8ehg7bjrJrbPXCRe1YSlamnp27/view?usp=sharing"
+        gdown.download(url, model_path, quiet=False)
     try:
         # Replace this path with your actual model path
         model = load_model("model.h5")
