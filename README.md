@@ -1,7 +1,3 @@
-Got it! Here's a professional `README.md` file you can use for your GitHub project [`Skin_cancer_classification`](https://github.com/NufalXBaalash/Skin_cancer_classification):
-
----
-
 # Skin Cancer Classification 🩺🖼️
 
 This project is a machine learning model built to **classify different types of skin cancer** from images.  
