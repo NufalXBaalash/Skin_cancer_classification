@@ -68,7 +68,7 @@ def load_keras_model():
     model_path = "model2.h5"
     if not os.path.exists(model_path):
         # Correct Google Drive URL format for gdown
-        url = "https://drive.google.com/uc?id=1mm_o84dvdeQ20mAssJ4K3grlO8pdrsfW"
+        url = "https://drive.google.com/file/d/1mm_o84dvdeQ20mAssJ4K3grlO8pdrsfW/view?usp=sharing"
         try:
             gdown.download(url, model_path, quiet=False)
             st.success("✅ Model downloaded successfully!")
