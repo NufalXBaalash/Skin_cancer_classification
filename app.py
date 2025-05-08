@@ -65,7 +65,7 @@ classes = ["Akiec", "BCC", "BKL", "DF", "MEL", "NV", "Vasc"]
 @st.cache_resource
 def load_keras_model():
     """Load the Keras model once and cache it."""
-    model_path = "model.h5"
+    model_path = "model2.h5"
     if not os.path.exists(model_path):
         # Correct Google Drive URL format for gdown
         url = "https://drive.google.com/file/d/1mm_o84dvdeQ20mAssJ4K3grlO8pdrsfW/view?usp=sharing"
