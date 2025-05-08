@@ -39,8 +39,8 @@ st.sidebar.info("This app uses AI to classify skin lesions into 7 different cate
 confidence_threshold = st.sidebar.slider("🎯 Confidence Threshold", min_value=0.0, max_value=1.0, value=0.5)
 
 # Fixed image dimensions
-img_height = 150
-img_width = 150
+img_height = 128
+img_width = 128
 
 # Class definitions with descriptions and emojis
 class_info = {
