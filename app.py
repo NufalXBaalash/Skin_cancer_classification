@@ -155,7 +155,7 @@ def main():
         selected_image = Image.open(io.BytesIO(camera_input.getvalue()))
 
     if selected_image is not None:
-        st.image(selected_image, caption="📸 Uploaded Image", use_column_width=True)
+        st.image(selected_image, caption="📸 Uploaded Image", use_container_width=True)
 
         target_size = (img_width, img_height)
         img_array = preprocess_image(selected_image, target_size)
